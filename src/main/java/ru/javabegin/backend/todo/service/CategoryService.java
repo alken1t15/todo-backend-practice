@@ -30,5 +30,24 @@ public class CategoryService {
         return repository.findById(id).get();
     }
 
+    public List<Category> findAll(String email) {
+        return repository.findByUserEmailOrderByTitleAsc(email);
+    }
 
+
+    public Category add(Category category) {
+        return repository.save(category);
+    }
+
+    public void update(Category category) {
+        repository.save(category);
+    }
+
+    public void deleteById(Long id) {
+        repository.deleteById(id);
+    }
+
+    public List<Category> findBuTitle(String text, String email) {
+        return repository.findByTitle(text, email);
+    }
 }
