@@ -1,10 +1,10 @@
 package ru.javabegin.backend.todo.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 import ru.javabegin.backend.todo.entity.Priority;
 import ru.javabegin.backend.todo.repo.PriorityRepository;
 
-import javax.transaction.Transactional;
 import java.util.List;
 
 // всегда нужно создавать отдельный класс Service для доступа к данным, даже если кажется,

@@ -1,12 +1,12 @@
 package ru.javabegin.backend.todo.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import ru.javabegin.backend.todo.entity.Task;
 import ru.javabegin.backend.todo.repo.TaskRepository;
 
-import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.List;
 

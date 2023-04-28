@@ -1,11 +1,9 @@
 package ru.javabegin.backend.todo.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 import ru.javabegin.backend.todo.entity.Stat;
 import ru.javabegin.backend.todo.repo.StatRepository;
-
-import javax.transaction.Transactional;
-
 // всегда нужно создавать отдельный класс Service для доступа к данным, даже если кажется,
 // что мало методов или это все можно реализовать сразу в контроллере
 // Такой подход полезен для будущих доработок и правильной архитектуры (особенно, если работаете с транзакциями)
